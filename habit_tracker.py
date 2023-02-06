@@ -28,7 +28,7 @@ def add_habit(habit_name):
     save_data()
 
 # a function to delete a habit
-def delete_habit(habit_name): #ToDo: error handling when user enters a habit name that doesn't exist
+def delete_habit(habit_name):  #todo: error handling when user enters a habit name that doesn't exist
     habits.remove(habit_name)
     del tracker[habit_name]
     save_data()
@@ -115,8 +115,7 @@ def main_menu():
         else:
             print("Invalid choice. Try again.")
 
-load_data()
-
+main_menu()
 
 
 
